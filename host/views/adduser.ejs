@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.3/dojo/dojo.js"
+            data-dojo-config="async: true"></script>
+	<script type="text/javascript" src="../wscript/script.js"></script>
+	<script type="text/javascript">require(['util'], function(util){util.maketable(["PHYSICS", "COMPSCI", "BIOLOGY"], ["100s", "200s", "300s", "400s", "500s"]); util.loadFade()});</script>
+	<link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+
+</head>
+<body>
+
+
+<div class="flexbox-container">
+   </div> <!-- first outter shell -->
+
+   <div><!-- second inner shell -->
+	   	<div class="above" style="background:url(http://materializecss.com/images/parallax1.jpg);">
+				<!-- <pre> --><h2> 	StudyBuddy</h2><!-- </pre> --> </div>
+		<div class="container card_dim" id="adduser" style="background:white;" >
+			<h2>New User Information:</h2>
+			<hr>
+			<form method="post" action="/index/process">
+			<div class="expBox">
+			<h4>Username : <input class="fadein" type="text" name="username" id="usernameID"></h4>
+			<h4>Password : <input class="fadein" type="password" name="password" id="password"></h4>			
+			
+			<h4>Name:<input class="fadein" type="text" name="name" id="name"></h4>
+			<h4>School Name:<input class="fadein" type="text" name="school" id="school"></h4>
+			<h4>Courses:</h4>
+			<!--<input class="fadein" type="text" name="courses" id="courses">-->
+			<div id="coursesDiv">
+			</div>
+			<h4>Age:<input class="fadein" type="text" name="age" id="age"></h4>
+				<!TODO: add age variable?>
+			<h4>Study Preferences</h4>
+			<p><input display="none" class="fadein" type="radio" name="study_pref" value="quiet" id="quiet"><label for="quiet">Quiet Study</label><br><br>
+			<input display="none" class="fadein" type="radio" name="study_pref" value="talkative" id="talkative"><label for="talkative">Talkative Collaboraiton</label></p>
+
+			<div id="fadediv">
+				<input id="fadeout" type="submit" value="Create">
+				<input id="fadein" type="submit" value="Create">
+			</div>
+			</div>
+			</form>
+			<p id="foot">"StudyBuddy" Developed by Heart of Gold</p>
+		</div>
+	</div>
+	
+    <div><!-- third inner shell, the "sidekick" view -->
+      
+
+   </div>
+
+</div>
+<!--  end -->
+<!--  flexbox -->
+
+
+
+</body>

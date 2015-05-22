@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.3/dojo/dojo.js"
+            data-dojo-config="async: true"></script>
+	<script src="../wscript/script.js"></script>
+	<script type="text/javascript">require(['util'], function(util){util.loadFade()});</script>	
+	<link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+
+</head>
+<body>
+
+
+<div class="flexbox-container">
+   </div> <!-- first outer shell -->
+
+   <div><!-- second inner shell -->
+	   	<div class="above" style="background:url(http://materializecss.com/images/parallax1.jpg);">
+				<!-- <pre> --><h2> 	StudyBuddy</h2><!-- </pre> --> </div>
+		<div class="container card_dim" style="background:white;">
+			<!-- <h2>StudyBuddy Login</h2> -->
+			<!-- <hr> -->
+			<p>Welcome to StudyBuddy! The web application that lets you connect with your peers to collaborate and succeed in your academic environment.
+			</p>
+			<p>If you don't Have an account with us, <a href="new">why not join?</a> it's free.</p>
+			<hr> 
+			<!-- <h3>Returning Users:</h3> -->
+			<h3>Already have an account?</h3>
+			<% if (message !== undefined) {%>
+			<p id="errormsg"><%=message%></p>
+			<%}%>
+			<form action="auth" method="post">
+			<h4>Username</h4>
+			<input type="text" name="username" id="usernameID">
+			<h4>Password</h4>
+			<input type="password" name="password" id="password">
+			<div id="fadediv">
+				<input id="fadeout" type="submit" value="Login">
+				<input id="fadein" type="submit" value="Login">
+			</div>
+			</form>
+			<br>
+			<br>
+			<a href="new">Create Account</a>
+			<div id="foot">"StudyBuddy" Developed by Heart of Gold</div>
+		</div>
+	</div>
+	
+    <div><!-- third inner shell, the "sidekick" view -->
+      
+
+   </div>
+
+</div>
+<!--  end -->
+<!--  flexbox -->
+
+
+
+</body>

@@ -1,0 +1,310 @@
+@import url('nav.css');  /*nav bar styling*/
+
+
+
+body {font-family: Garamond;
+	  font-size:16px;
+}
+
+hr {
+	width:95%;
+	text-align:left;
+	margin-left:0;
+	color:#A30000;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+h2 {
+	color: #A30000;	
+}
+h3{
+	color: #A30000;
+}
+p {
+	color:#B2B2B2;
+}
+h4 {
+	margin: 0;
+	color:#B2B2B2;
+	padding-top: 40px;
+}
+a {
+	color:#EBC633;
+}
+a:hover{
+	color:#FF9933;
+}
+#foot{	
+	position: absolute;
+	text-align: center;
+	color: #A30000/*#b2b2b2*/;
+	font-size: .8em;
+	bottom: 3px;
+}
+
+.card_dim{
+	min-height: 270px;
+	width:300px;
+}
+
+.container.card_dim{
+	position: relative;
+	margin-left:30%;
+	margin-top:2.5%;
+	height: 70%; /*adjusts 'card' length*/
+	min-width: 250px;
+	min-height: 500px;
+	align-items : center;
+	/*box-shadow: 0px 0px 15px #888888;*/
+/*	padding-left: .5%;
+	padding-right: .5%;
+	padding-top:.5%;*/
+	padding:5px 50px 5px; /* .was 50*/
+	
+	color: #FFF;
+	transition: box-shadow 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 0.2s;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.52);
+	/*background:#e91e63;*//*#009688;#91092A;*/
+}
+.above {	/*color: white;*/
+	position: relative;
+	margin-left:30%;
+	margin-top:2.5%;
+	width: 300px;
+	padding:5px 50px 5px; /* .was 50*/
+	min-width: 250px;
+
+
+	color: #FFF;
+	background:url(http://materializecss.com/images/parallax1.jpg);
+	transition: box-shadow 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 0.2s;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.52);
+	/*background:#e91e63;*//*#009688;#91092A;*/
+}
+/*.above#adjust_above_1{	margin-left:15%;}*/ /*this was causing an unnesccary shift to main study buddy panel  */
+.above#adjust_above_2{	margin-left:100%; height: 300px; background:teal; } 
+/*overview: changing the card to square-like form*/
+
+
+.above > h2{color: white;}
+
+.container.wel{ /*added to manage the 'welcome.html page'*/
+	height: 40%; /*adjusts 'card' length*/
+	background:url(https://lilithluciferandlarry.files.wordpress.com/2013/07/crumpled_lined_white_paper.jpg);
+}
+
+#fadediv{  padding-top: 30px;}
+
+#fadein{
+	position:absolute;
+	opacity: 0;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #A30000;
+	background-color: white;
+	font-weight: bold;
+	color: #A30000;
+}
+#fadeout{
+	position:absolute;
+	opacity: 1;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #b2b2b2;
+	background-color: white;
+	font-weight: bold;
+	color: #b2b2b2;
+}
+select{
+	position:relative;
+	min-width:50%;
+}
+input:not([type=submit]){
+	/*border-style: solid
+	;border-color: #E6E6E6;
+	color: #E6E6E6;*/
+  
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+  outline-width: 0;/*no glowy border yay!*/
+}
+input[type="checkbox"],
+input[type="radio"]
+{
+    display: none;
+}
+#coursechoosing tr
+{
+	margin-left : -.2em;
+	margin-bottom : .1em;
+}
+#coursechoosing th
+{
+	color : #A30000;
+}
+#coursechoosing td{
+	padding: 2px;
+}
+label
+{
+	color : #b2b2b2;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #A30000;
+}
+label:hover
+{
+	color : #000000;
+}
+input[type="checkbox"]:checked  + label,
+input[type="radio"]:checked + label
+{
+	color: #A30000;
+	
+}
+input[type="text"], input[type="password"]
+{
+	width: auto;
+	overflow : visible;
+	float: right;
+	display : flex;
+	color: #b2b2b2;
+}
+input[type="text"]:focus, input[type="password"]:focus
+{
+	color : #A30000;
+	font-style: italic;
+}
+input:not([type=submit]):focus{
+/*	border-color: #EBC633;
+	border-style: solid;
+	box-shadow: 2px;
+	color: #E6E6E6;*/
+	border-bottom: solid 2px #A30000/*#969696*/;
+}
+#errormsg{
+	color : #FF0000;
+}
+
+/* creating styles for main.html below*/
+
+
+.container.card_dim#content{	
+	margin-left:15%;
+}
+.container.card_dim#sidekick{
+	margin-left:100%;
+	min-height: 270px;
+	height: 380px; /*overview: changing the card to square-like form*/
+	background: #d9d1d1;
+/*		background: lightb powderblue;*/
+}
+
+.container.card_dim#adduser{
+	min-height: 1050px;
+
+}
+
+/* creating css rules to handle constraining cards for the case where the window is
+resized. effects will not move*/
+.container.card_dim, .above#adjust_above_1,
+.above#adjust_above_2 > #chat_container,
+.container.card_dim#sidekick > #matches_container{
+	position:relative;		
+}
+
+.above#adjust_above_1{
+		width:300px;
+/*		margin-left: 15%;*/
+}
+
+.above#adjust_above_2 ,
+.container.card_dim#sidekick {
+/*	margin-left: 1000px;*/
+/*position:absolute;	*/
+margin-left: 400px;
+}
+/* overview: place card "sidekick logic below"*/
+.above#adjust_above_2, .container.card_dim#sidekick { /*> #chat_container{*/
+	overflow-y: auto;
+	background: white;
+	color: 	#A30000;
+}
+
+
+
+/*overview: top panel css rule*/
+.above#adjust_above_2 > #chat_container > .user_chat_preview{
+/*	height:inherit;
+	max-height: height;
+	margin-left: -15%;*/
+/*	background:blue;*/
+	overflow-y: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*overview: bottom panel css rule*/
+.container#sidekick > #matches_container > .user_match_preview{
+/*	height:inherit;
+	width:inherit;
+	max-width: height;
+	max-height: height;
+	margin-left: -15%;*/
+	overflow-y: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color:teal;
+}
+
+.container.card_dim#sidekick > #matches_container > .user_match_preview > .photo#user_photo1{
+	height: 90px;
+	width: 90px;
+	margin-left: 180px;
+	background: darkgray;	
+}
+
+
+.container.card_dim#sidekick > #matches_container > .user_match_preview > .flexbox-container {
+  display: -webkit-inline-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.container.card_dim#sidekick > #matches_container > .user_match_preview > .flexbox-container > div {
+  /*width: 40%;*/
+  /*  padding: 10px;*/
+   padding-left: 0;
+   background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+	
+}
+
+.right{
+	padding-top: -25%;
+background:url(../profile.jpg);
+/*	background: url(http://www.primaria-lumina.ro/wp-content/uploads/2008/06/Facebook-no-profile-picture-icon-620x389.jpg);*/
+/*background: black;*/
+}
+
+.hr{
+	opacity: .1;
+}
+
+.container.card_dim#sidekick > #matches_container > .user_match_preview > .flexbox-container > div:first-child {
+  margin-right: 20px;
+}
+
+
